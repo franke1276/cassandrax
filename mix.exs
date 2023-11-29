@@ -40,7 +40,8 @@ defmodule Cassandrax.MixProject do
   defp deps do
     [
       {:xandra, [env: :prod, git: "https://github.com/sonnen/xandra.git", branch: "v0.13.1-depfix"]},
-      {:ecto, "~> 3.8"},
+      {:ecto, "~> 3.10"},
+      {:decimal, "~> 2.0", override: true },
       {:ex_doc, "~> 0.23", only: :dev, runtime: false}
     ]
   end
