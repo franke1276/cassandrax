@@ -39,7 +39,7 @@ defmodule Cassandrax.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:xandra, "~> 0.14"},
+      {:xandra, [env: :prod, git: "https://github.com/sonnen/xandra.git", branch: "v0.13.1-depfix"]},
       {:ecto, "~> 3.8"},
       {:ex_doc, "~> 0.23", only: :dev, runtime: false}
     ]
